@@ -49,5 +49,5 @@ if discipline != None:
                 submit = st.button("Search for Gaps in Research")
             
             if submit:
-                st.session_state['search'] = topic
+                st.session_state['search'] = " - ".join([discipline, field, topic])
                 st.switch_page("pages/Search.py")
