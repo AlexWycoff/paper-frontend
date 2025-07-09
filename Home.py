@@ -50,4 +50,4 @@ if discipline != None:
             
             if submit:
                 st.session_state['search'] = topic
-                st.switch_page("pages/search.py")
+                st.switch_page("pages/Search.py")
