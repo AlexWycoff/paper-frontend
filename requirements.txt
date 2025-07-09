@@ -1,0 +1,6 @@
+google.generativeai
+requests
+pandas
+dotenv
+streamlit
+google-cloud-firestore
