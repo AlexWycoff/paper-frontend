@@ -213,9 +213,6 @@ def bold_text(string, separator="**"):
 def research_query(query, paper_df, stream=True, limit=10, full_text=False):
     ''' Takes a text prompt and returns gemini responses and a dictionary of token usage. '''
     
-    query = prompt_query(query)
-    yield "Boolean search: " + query + "\n \n"
-    
     # Ensure the cache is empty so we can get full usage of Gemini's 1M tokens
     cache_list = caching.CachedContent.list()
     for cached_content in cache_list:
