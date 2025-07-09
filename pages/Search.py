@@ -5,10 +5,9 @@ from functions import *
 
 st.set_page_config(page_title="Search")
 
-if 'search' in st.session_state.keys():
-    st.text_input("Find gaps in research on any topic", key="search", value=st.session_state['search'])
-else:
-    st.text_input("Find gaps in research on any topic", key="search")
+if 'search' not in st.session_state.keys():
+    st.session_state['search'] = ""
+st.text_input("Find gaps in research on any topic", key="search", value=st.session_state['search'])
 search_input = st.session_state['search']
 
 with st.sidebar:
