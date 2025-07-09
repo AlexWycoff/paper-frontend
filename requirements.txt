@@ -3,4 +3,5 @@ requests
 pandas
 dotenv
 streamlit
+streamlit-extras
 google-cloud-firestore
